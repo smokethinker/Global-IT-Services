@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)file:///D:/Download/%E5%85%A8%E7%90%83IT%E6%9C%8D%E5%8B%99_%E5%BD%B1%E7%89%87%E5%88%86%E9%8F%A1%E8%A1%A8_%E7%8D%A8%E7%99%BD%E7%89%88_v1.html -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球IT服務 — 主持人獨白版 分鏡表 v1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+  :root {
+    --ink:    #111318;
+    --bg:     #F4F2ED;
+    --sur:    #FFFFFF;
+    --blue:   #1A4A7A;  --blue-s:   rgba(26,74,122,.07);
+    --red:    #B83232;  --red-s:    rgba(184,50,50,.07);
+    --amber:  #9A6A00;  --amber-s:  rgba(154,106,0,.07);
+    --green:  #1A6040;  --green-s:  rgba(26,96,64,.07);
+    --orange: #B85C1A;  --orange-s: rgba(184,92,26,.07);
+    --purple: #5C3A8A;  --purple-s: rgba(92,58,138,.07);
+    --teal:   #1A6B6B;  --teal-s:   rgba(26,107,107,.07);
+    --muted:  #7A7468;
+    --bdr:    #DDD9D2;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Noto Serif TC', serif;
+    padding: 44px 40px 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 22px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+  }
+  .eyebrow { font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.18em; color:var(--muted); text-transform:uppercase; margin-bottom:9px; }
+  h1 { font-size:clamp(20px,3vw,30px); font-weight:900; line-height:1.25; }
+  h1 em { font-style:normal; color:var(--red); }
+  h1 .badge {
+    display:inline-block; font-family:'IBM Plex Mono',monospace;
+    font-size:11px; font-weight:600; letter-spacing:.06em;
+    background:var(--amber); color:#fff;
+    padding:2px 10px; border-radius:3px; margin-left:10px;
+    vertical-align:middle; position:relative; top:-2px;
+  }
+  .hmeta { font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--muted); line-height:2.1; text-align:right; }
+
+  /* ── VERSION NOTICE ── */
+  .ver-notice {
+    background: var(--amber-s);
+    border: 1.5px solid var(--amber);
+    border-radius: 6px;
+    padding: 11px 16px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #5A3C00;
+  }
+  .ver-notice .icon { font-size:15px; flex-shrink:0; margin-top:1px; }
+  .ver-notice strong { font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:.1em; text-transform:uppercase; display:block; margin-bottom:3px; color:var(--amber); }
+
+  /* ── TIMELINE ── */
+  .tl-wrap { margin-bottom:32px; }
+  .tl-labels { display:flex; gap:3px; margin-bottom:5px; }
+  .tl-lbl { font-family:'IBM Plex Mono',monospace; font-size:8px; color:#fff; text-align:center; padding:3px 5px; line-height:1.4; border-radius:3px 3px 0 0; }
+  .tl-bar { display:flex; height:9px; border-radius:5px; overflow:hidden; gap:3px; }
+  .tl-s { border-radius:3px; }
+  .c1{background:var(--blue);   flex:18}
+  .c2{background:var(--red);    flex:20}
+  .c3{background:var(--green);  flex:20}
+  .c4{background:var(--orange); flex:20}
+  .c5{background:var(--purple); flex:20}
+  .c6{background:var(--teal);   flex:12}
+
+  /* ── ACT DIVIDER ── */
+  .act-div { display:flex; align-items:center; gap:12px; margin:28px 0 14px; }
+  .act-div::before,.act-div::after { content:''; flex:1; height:1px; background:var(--bdr); }
+  .act-lbl { font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.15em; color:var(--muted); text-transform:uppercase; white-space:nowrap; }
+
+  /* ── SCENE CARD ── */
+  .scene { background:var(--sur); border:1px solid var(--bdr); border-radius:8px; overflow:hidden; margin-bottom:16px; box-shadow:0 1px 5px rgba(0,0,0,.04); }
+  .s-head { display:flex; align-items:stretch; border-bottom:1px solid var(--bdr); }
+  .s-num { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:13px 17px; border-right:1px solid var(--bdr); min-width:66px; gap:2px; }
+  .s-num .n { font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; line-height:1; }
+  .s-num .of { font-family:'IBM Plex Mono',monospace; font-size:8.5px; color:var(--muted); }
+  .s-info { flex:1; padding:12px 16px; display:flex; flex-direction:column; justify-content:center; gap:4px; }
+  .s-role { font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:.1em; text-transform:uppercase; }
+  .s-name { font-size:15px; font-weight:700; line-height:1.3; }
+  .s-sub  { font-size:11.5px; color:var(--muted); margin-top:2px; }
+  .s-time { display:flex; flex-direction:column; align-items:flex-end; justify-content:center; padding:12px 16px; border-left:1px solid var(--bdr); gap:3px; min-width:110px; }
+  .t-r { font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; }
+  .t-d { font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:var(--muted); }
+
+  .s-body { display:grid; grid-template-columns:195px 1fr 215px; }
+  .col { padding:15px 15px 17px; border-right:1px solid var(--bdr); }
+  .col:last-child { border-right:none; }
+  .col-lbl { font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:9px; padding-bottom:7px; border-bottom:1px dashed var(--bdr); }
+
+  .vbox { border-radius:5px; min-height:82px; display:flex; align-items:center; justify-content:center; padding:10px; margin-bottom:9px; }
+  .vtext { font-family:'IBM Plex Mono',monospace; font-size:9px; line-height:1.75; text-align:center; }
+  .chips { display:flex; flex-wrap:wrap; gap:4px; margin-top:7px; }
+  .chip { font-family:'IBM Plex Mono',monospace; font-size:8px; padding:2px 7px; border-radius:99px; border:1px solid var(--bdr); color:var(--muted); }
+
+  /* HOST-ONLY narrator tag */
+  .host-tag {
+    display:inline-flex; align-items:center; gap:5px;
+    font-family:'IBM Plex Mono',monospace; font-size:8px; letter-spacing:.08em; text-transform:uppercase;
+    background:#1A4A7A; color:#fff;
+    padding:2px 9px; border-radius:99px; margin-bottom:8px;
+  }
+
+  .script { border-radius:4px; padding:11px 13px; font-size:12.5px; line-height:2.0; color:var(--ink); margin-bottom:7px; }
+  .spk { font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:.09em; text-transform:uppercase; padding-bottom:5px; margin-bottom:7px; border-bottom:1px solid; display:flex; align-items:center; gap:6px; }
+  .spk::before { content:''; width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+
+  /* data card */
+  .dc { border-radius:5px; padding:9px 11px 10px; border-left:3px solid; margin-bottom:7px; }
+  .dc-tag { font-family:'IBM Plex Mono',monospace; font-size:8px; letter-spacing:.1em; text-transform:uppercase; margin-bottom:3px; }
+  .dc-num { font-family:'IBM Plex Mono',monospace; font-size:21px; font-weight:600; line-height:1; margin-bottom:3px; }
+  .dc-desc { font-size:11px; line-height:1.6; color:#3A352E; }
+  .dc-src  { font-family:'IBM Plex Mono',monospace; font-size:7.5px; color:var(--muted); margin-top:3px; }
+
+  .pts { list-style:none; display:flex; flex-direction:column; gap:6px; }
+  .pts li { font-size:12px; line-height:1.6; color:#3A352E; display:flex; gap:7px; align-items:flex-start; }
+  .pts li .arr { flex-shrink:0; font-size:10px; margin-top:3px; }
+  .sub-head { font-family:'IBM Plex Mono',monospace; font-size:8px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:11px 0 6px; border-top:1px dashed var(--bdr); padding-top:8px; }
+
+  .note { border-radius:4px; padding:8px 11px; font-size:11.5px; line-height:1.65; margin-top:10px; }
+  .note strong { font-family:'IBM Plex Mono',monospace; font-size:8px; letter-spacing:.1em; display:block; margin-bottom:3px; text-transform:uppercase; }
+
+  /* value flag */
+  .vflag {
+    display:inline-flex; align-items:center; gap:6px;
+    font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:.06em;
+    padding:3px 10px 3px 7px; border-radius:99px; border:1.5px solid;
+    margin-top:5px; width:fit-content;
+  }
+  .vflag .dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+
+  mark { background:rgba(154,106,0,.15); padding:0 2px; border-radius:2px; }
+
+  /* ── SCENE THEMES ── */
+  .t1 .s-num{background:var(--blue-s)} .t1 .s-num .n,.t1 .s-role,.t1 .t-r{color:var(--blue)}
+  .t1 .vbox{background:#EAF0F8} .t1 .vtext{color:var(--blue)}
+  .t1 .script{background:var(--blue-s)} .t1 .spk{color:var(--blue);border-color:rgba(26,74,122,.2)} .t1 .spk::before{background:var(--blue)}
+  .t1 .pts li .arr{color:var(--blue)}
+  .t1 .note{background:var(--blue-s);border:1px solid rgba(26,74,122,.18);color:#0D2845} .t1 .note strong{color:var(--blue)}
+
+  .t2 .s-num{background:var(--red-s)} .t2 .s-num .n,.t2 .s-role,.t2 .t-r{color:var(--red)}
+  .t2 .vbox{background:#F6EAEA} .t2 .vtext{color:var(--red)}
+  .t2 .script{background:var(--red-s)} .t2 .spk{color:var(--red);border-color:rgba(184,50,50,.2)} .t2 .spk::before{background:var(--red)}
+  .t2 .pts li .arr{color:var(--red)}
+  .t2 .dc{background:rgba(184,50,50,.05);border-color:var(--red)} .t2 .dc-tag,.t2 .dc-num{color:var(--red)}
+  .t2 .note{background:var(--red-s);border:1px solid rgba(184,50,50,.18);color:#5C1A1A} .t2 .note strong{color:var(--red)}
+
+  .t3 .s-num{background:var(--green-s)} .t3 .s-num .n,.t3 .s-role,.t3 .t-r{color:var(--green)}
+  .t3 .vbox{background:#EBF4EF} .t3 .vtext{color:var(--green)}
+  .t3 .script{background:var(--green-s)} .t3 .spk{color:var(--green);border-color:rgba(26,96,64,.2)} .t3 .spk::before{background:var(--green)}
+  .t3 .pts li .arr{color:var(--green)}
+  .t3 .dc{background:rgba(26,96,64,.05);border-color:var(--green)} .t3 .dc-tag,.t3 .dc-num{color:var(--green)}
+  .t3 .vflag{border-color:var(--green);color:var(--green)} .t3 .vflag .dot{background:var(--green)}
+  .t3 .note{background:var(--green-s);border:1px solid rgba(26,96,64,.18);color:#0E3D28} .t3 .note strong{color:var(--green)}
+
+  .t4 .s-num{background:var(--orange-s)} .t4 .s-num .n,.t4 .s-role,.t4 .t-r{color:var(--orange)}
+  .t4 .vbox{background:#F7EFEA} .t4 .vtext{color:var(--orange)}
+  .t4 .script{background:var(--orange-s)} .t4 .spk{color:var(--orange);border-color:rgba(184,92,26,.2)} .t4 .spk::before{background:var(--orange)}
+  .t4 .pts li .arr{color:var(--orange)}
+  .t4 .dc{background:rgba(184,92,26,.05);border-color:var(--orange)} .t4 .dc-tag,.t4 .dc-num{color:var(--orange)}
+  .t4 .vflag{border-color:var(--orange);color:var(--orange)} .t4 .vflag .dot{background:var(--orange)}
+  .t4 .note{background:var(--orange-s);border:1px solid rgba(184,92,26,.18);color:#5C2A0A} .t4 .note strong{color:var(--orange)}
+
+  .t5 .s-num{background:var(--purple-s)} .t5 .s-num .n,.t5 .s-role,.t5 .t-r{color:var(--purple)}
+  .t5 .vbox{background:#F0EBF8} .t5 .vtext{color:var(--purple)}
+  .t5 .script{background:var(--purple-s)} .t5 .spk{color:var(--purple);border-color:rgba(92,58,138,.2)} .t5 .spk::before{background:var(--purple)}
+  .t5 .pts li .arr{color:var(--purple)}
+  .t5 .dc{background:rgba(92,58,138,.05);border-color:var(--purple)} .t5 .dc-tag,.t5 .dc-num{color:var(--purple)}
+  .t5 .vflag{border-color:var(--purple);color:var(--purple)} .t5 .vflag .dot{background:var(--purple)}
+  .t5 .note{background:var(--purple-s);border:1px solid rgba(92,58,138,.18);color:#341A5C} .t5 .note strong{color:var(--purple)}
+
+  .t6 .s-num{background:var(--teal-s)} .t6 .s-num .n,.t6 .s-role,.t6 .t-r{color:var(--teal)}
+  .t6 .vbox{background:#EBF4F4} .t6 .vtext{color:var(--teal)}
+  .t6 .script{background:var(--teal-s)} .t6 .spk{color:var(--teal);border-color:rgba(26,107,107,.2)} .t6 .spk::before{background:var(--teal)}
+  .t6 .pts li .arr{color:var(--teal)}
+  .t6 .note{background:var(--teal-s);border:1px solid rgba(26,107,107,.18);color:#0E3D3D} .t6 .note strong{color:var(--teal)}
+
+  /* STATS */
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:var(--bdr); border:1px solid var(--bdr); border-radius:6px; overflow:hidden; margin-top:44px; }
+  .stat { background:var(--sur); padding:13px 10px; text-align:center; }
+  .stat .v { font-family:'IBM Plex Mono',monospace; font-size:17px; font-weight:600; display:block; line-height:1; margin-bottom:5px; }
+  .stat .d { font-size:10px; color:var(--muted); line-height:1.45; }
+  .stat:nth-child(1) .v{color:var(--blue)}
+  .stat:nth-child(2) .v{color:var(--red)}
+  .stat:nth-child(3) .v{color:var(--green)}
+  .stat:nth-child(4) .v{color:var(--orange)}
+  .stat:nth-child(5) .v{color:var(--teal)}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="eyebrow">Video Storyboard · 主持人獨白版 · 8分鐘完整版</div>
+    <h1>精誠集團 <em>全球IT服務</em><span class="badge">主持人獨白版</span><br>深度報導 × 天下雜誌合作</h1>
+  </div>
+  <div class="hmeta">
+    版本：Host-Only v1.0 · 2026.03.06<br>
+    總片長：8 分鐘<br>
+    出鏡：主持人（全程獨白）<br>
+    天下雜誌 × 精誠集團
+  </div>
+</div>
+
+<!-- VERSION NOTICE -->
+<div class="ver-notice">
+  <div class="icon">📋</div>
+  <div>
+    <strong>版本說明</strong>
+    本版本為「主持人獨白版」，全程無生態長或其他受訪者出鏡。主持人以深度報導記者的視角，兼具「觀察者」與「解說者」雙重角色，自行帶出精誠三大核心能力。
+    相較於訪談版（v6），本版本更適合作為品牌形象短片、無受訪者配合的緊急備案，或純旁白配 B-Roll 的剪輯風格。
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="tl-wrap">
+  <div class="tl-labels">
+    <div class="tl-lbl c1" style="flex:18">① 開場  0:00–1:30</div>
+    <div class="tl-lbl c2" style="flex:20">② 台商出海考驗  1:30–3:00</div>
+    <div class="tl-lbl c3" style="flex:20">③ 生態圈能量  3:00–4:30</div>
+    <div class="tl-lbl c4" style="flex:20">④ CBD商務顧問  4:30–6:00</div>
+    <div class="tl-lbl c5" style="flex:20">⑤ 專案控管  6:00–7:15</div>
+    <div class="tl-lbl c6" style="flex:12">⑥ 結尾  7:15–8:00</div>
+  </div>
+  <div class="tl-bar">
+    <div class="tl-s c1"></div>
+    <div class="tl-s c2"></div>
+    <div class="tl-s c3"></div>
+    <div class="tl-s c4"></div>
+    <div class="tl-s c5"></div>
+    <div class="tl-s c6"></div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 1 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景一 — 開場｜大航海時代的 IT 命題</span></div>
+
+<div class="scene t1">
+  <div class="s-head">
+    <div class="s-num"><div class="n">01</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人獨白 · Host Narration</div>
+      <div class="s-name">台灣出口破紀錄，台商出海浪潮席捲而來</div>
+      <div class="s-sub">建立宏觀背景，以出口數字開場，引出台商主動出海的時代趨勢，最後收攏到「IT 的角色已不同以往」</div>
+    </div>
+    <div class="s-time"><div class="t-r">0:00 – 1:30</div><div class="t-d">約 90 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        【0:00–0:10】精誠 × 天下 LOGO 聯合淡入<br><br>
+        【0:10–0:40】主持人站姿，城市夜景空鏡<br>字幕：「2025 出口 $6,407億 歷史新高」<br><br>
+        【0:40–1:10】B-Roll 蒙太奇：<br>港口貨輪、東南亞工廠施工、<br>AI 機房、台商簽約儀式<br>字幕：「AI資通產品年增率 +89.5%」<br><br>
+        【1:10–1:30】主持人坐姿，語氣轉沉<br>字幕大字：「IT，已是出海成敗的關鍵」
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人站→坐</span>
+        <span class="chip">蒙太奇B-Roll</span>
+        <span class="chip">數據字卡</span>
+        <span class="chip">背景音樂起</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        2026 年的台灣，正在書寫一頁矛盾的歷史。<br><br>
+        根據財政部數據，2025 年台灣出口總額突破 <mark>6,407 億美元</mark>，寫下有史以來最高紀錄；AI 資通產品年增率 <mark>89.5%</mark>，台灣已成為全球 AI 供應鏈的核心軍火庫。<br><br>
+        但在這串數字的背後，台商正在做一件比出口更重要的事——<strong>出海</strong>。從越南到日本、從新加坡到墨西哥，越來越多台灣企業正在把工廠、研發、區域總部，一站一站地搬往海外。<br><br>
+        過去，出海的邏輯很簡單：找便宜的土地、便宜的人力。但今天，遊戲規則已經變了。PwC 的調查告訴我們，<mark>台灣 CEO 面對地緣政治風險，首要行動是強化 IT 與資安</mark>——不是降低成本，是強化 IT。<br><br>
+        IT，已經不是最後才想到的事。它是台商能不能在海外站穩腳步的第一道關。
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">數據字卡 / 導演備註</div>
+      <ul class="pts">
+        <li><span class="arr">▸</span>字卡①：<strong>$6,407億</strong>｜2025出口歷史新高</li>
+        <li><span class="arr">▸</span>字卡②：<strong>+89.5%</strong>｜AI資通產品年增率</li>
+        <li><span class="arr">▸</span>字卡③（大字）：「IT，已是出海成敗的關鍵」</li>
+        <li><span class="arr">▸</span>PwC數據字卡：<strong>31%</strong> CEO首要行動＝強化IT資安</li>
+      </ul>
+      <div class="note">
+        <strong>獨白版差異</strong>
+        訪談版開場以「懸念」收尾（IT跟得上嗎？）；獨白版直接宣告結論（IT 是第一道關），語氣更像報導，不需要等受訪者來給答案。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 2 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景二 — 台商出海的三道 IT 現實考驗（數據支撐）</span></div>
+
+<div class="scene t2">
+  <div class="s-head">
+    <div class="s-num"><div class="n">02</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人獨白 · 數據鋪陳 Host Narration</div>
+      <div class="s-name">三道現實考驗，數字為證 — 帶出「為何需要精誠」的問題意識</div>
+      <div class="s-sub">主持人直接點名三道考驗，每道以真實數據背書，並在結尾宣告：「有一套答案，值得所有出海台商知道」</div>
+    </div>
+    <div class="s-time"><div class="t-r">1:30 – 3:00</div><div class="t-d">約 90 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        主持人坐姿，語氣穩重<br>像資深報導記者分析局勢<br><br>
+        考驗一：B-Roll 海外設廠、多廠商協調<br>字卡：「在地服務，誰來承接？」<br>數據浮現：東南亞 #1 投資首選<br><br>
+        考驗二：B-Roll 合約文件 / 報關場景<br>字卡：「跨境商務，如何合規？」<br>數據：GMT 15% 各國上路時間軸<br><br>
+        考驗三：B-Roll 甘特圖 / 跨國視訊<br>字卡：「專案落地，誰來掌控？」<br>數據：&gt;70% 超時超支<br><br>
+        結尾：主持人語氣上揚<br>字幕：「精誠，有答案」
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人坐姿</span>
+        <span class="chip">三段B-Roll切換</span>
+        <span class="chip">圖卡動畫×3</span>
+        <span class="chip">GMT時間軸動畫</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        台商出海的浪潮比很多人想像的更猛烈。根據 PwC 的調查，台灣企業出海首選已是<mark>美國（39%，年增 12%）</mark>，越南第三、日本第五——東南亞和美洲同步發力。<br><br>
+        但我們深入追蹤後發現，台商在海外 IT 建置上，普遍面臨三道現實考驗。<br><br>
+        <strong>第一道——在地服務，誰來承接？</strong><br>
+        台商到了越南、新加坡、日本，需要的是雲端、資安、軟硬整合、日常維運的整套能量。但現實是，大多數 IT 服務商的版圖，根本跟不上台商出海的速度。服務拼湊、品質不穩、出問題責任不清，幾乎是台商共同的痛。<br><br>
+        <strong>第二道——跨境商務，如何合規？</strong><br>
+        IT 採購跨了國境，金流馬上變複雜。日本、越南 <mark>2024 年率先實施全球最低稅負制（GMT 15%）</mark>，新加坡、馬來西亞、泰國 2025 年跟進。VAT 稅率、進口關稅、跨境匯款限制——每一個沒處理好，都是白白燒掉的成本。<br><br>
+        <strong>第三道——海外專案，誰來掌控？</strong><br>
+        跨時區、跨語言、跨法規，每個環節都是變數。Standish Group 的研究顯示，<mark>全球大型 IT 專案超過七成出現延誤或成本超支</mark>。對剛落地海外的台商，IT 每晚一天，廠房投產就慢一天。<br><br>
+        三道考驗，三個都很真實。而精誠，有一套系統性的答案。
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">數據字卡 ↔ 下段連結</div>
+      <div class="dc">
+        <div class="dc-tag">考驗一</div>
+        <div class="dc-num">39%</div>
+        <div class="dc-desc">台灣企業出海首選：美國（+12%）越南第三、日本第五</div>
+        <div class="dc-src">PwC 2026 台灣企業領袖調查</div>
+      </div>
+      <div class="dc">
+        <div class="dc-tag">考驗二</div>
+        <div class="dc-num">GMT 15%</div>
+        <div class="dc-desc">日越2024、星馬泰2025——台商稅務架構必須全面重盤</div>
+        <div class="dc-src">KPMG / 勤業眾信 2024–25</div>
+      </div>
+      <div class="dc">
+        <div class="dc-tag">考驗三</div>
+        <div class="dc-num">&gt;70%</div>
+        <div class="dc-desc">全球大型IT專案出現時程延誤或成本超支</div>
+        <div class="dc-src">Standish Group CHAOS Report</div>
+      </div>
+      <div class="note">
+        <strong>獨白版差異</strong>
+        訪談版此段以「問題」作結，留白給生態長回答。獨白版直接收尾「精誠，有答案」，主動引導觀眾繼續看，語氣更像紀錄片解說員。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 3 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景三 — 特色 A｜全球IT生態圈，在地服務能量充沛</span></div>
+
+<div class="scene t3">
+  <div class="s-head">
+    <div class="s-num"><div class="n">03</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人獨白 · 特色 A · Value A</div>
+      <div class="s-name">Systex Asia + 全球生態圈 — 台商去哪，服務就在哪</div>
+      <div class="s-sub">主持人以「我們發現」的報導視角，帶出精誠在地法人、原廠授權、生態夥伴的完整布局</div>
+    </div>
+    <div class="s-time"><div class="t-r">3:00 – 4:30</div><div class="t-d">約 90 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        主持人坐姿，語氣轉為「揭示」<br><br>
+        B-Roll 交叉剪輯：<br>· Systex Asia 新加坡辦公室實景<br>· 越南、馬來西亞在地團隊<br>· 生態圈地圖節點動態標示<br>· 原廠合作簽約場景<br><br>
+        動態字卡序列：<br>「50+ 全球營運據點」<br>「Systex Asia 新加坡總部・231人」<br>「日越星馬 在地法人資格」<br>「180+ 原廠授權・30+ 戰略夥伴」
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人坐姿</span>
+        <span class="chip">B-Roll 東南亞實景</span>
+        <span class="chip">地圖節點動態圖</span>
+        <span class="chip">字卡序列</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        我們先來看第一個答案——<strong>全球 IT 生態圈</strong>。<br><br>
+        精誠集團在全球擁有超過 <mark>50 個營運據點</mark>，服務過超過 <mark>4 萬家台灣企業客戶</mark>。這套在台灣深耕幾十年的能量，現在正在系統性地複製到海外。<br><br>
+        在東南亞，精誠透過 <strong>Systex Asia</strong> 在新加坡設立區域總部，並在馬來西亞、越南、印尼設有在地據點，共有 <mark>231 位在地專業人員</mark>。這不是掛牌代理，而是在當地有法人資格、能開立發票、直接負責的本地實體。<br><br>
+        加上與超過 <mark>180 家國際原廠的跨區經銷授權</mark>，以及 <mark>30 多個跨區戰略 IT 夥伴</mark>——雲端、資安、軟硬體整合、日常維運，台商在越南需要什麼，在日本需要什麼，精誠都能在當地快速組出最合適的交付陣容。<br><br>
+        台商去哪，服務就在哪。這是精誠花了多年在海外紮根，才建立起來的護城河。
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">數據字卡 / 備註</div>
+      <div class="vflag"><span class="dot"></span>特色 A · Global IT Ecosystem</div>
+      <div style="margin-top:10px">
+        <ul class="pts">
+          <li><span class="arr">▸</span>字卡①：<strong>50+</strong> 全球營運據點</li>
+          <li><span class="arr">▸</span>字卡②：<strong>4萬+</strong> 台灣企業客戶服務經驗</li>
+          <li><span class="arr">▸</span>地圖標記：<strong>日・越・星・馬</strong> 在地法人</li>
+          <li><span class="arr">▸</span>字卡③：<strong>Systex Asia</strong> 新加坡總部 · 231人</li>
+          <li><span class="arr">▸</span>字卡④：<strong>180+</strong> 原廠跨區授權</li>
+          <li><span class="arr">▸</span>字卡⑤：<strong>30+</strong> 跨區戰略IT夥伴</li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>獨白版敘事重點</strong>
+        訪談版此段由生態長第一人稱陳述「我們」；獨白版改由主持人第三人稱「精誠」，語氣像報導一家受矚目的公司，客觀但帶有讚賞，建立可信度。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 4 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景四 — 特色 B｜CBD 跨境商務整合，不只是 IT 廠商</span></div>
+
+<div class="scene t4">
+  <div class="s-head">
+    <div class="s-num"><div class="n">04</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人獨白 · 特色 B · Value B</div>
+      <div class="s-name">CBD Cross Border Deal — 從採購到交付，金流商流一條龍</div>
+      <div class="s-sub">主持人解說 CBD 的完整服務架構，用「不只做 IT，連商務流都顧到」的角度帶出精誠的獨特差異</div>
+    </div>
+    <div class="s-time"><div class="t-r">4:30 – 6:00</div><div class="t-d">約 90 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        主持人坐姿，語氣轉「解析」<br><br>
+        B-Roll 交叉剪輯：<br>· 顧問白板討論 / 合約審閱<br>· 報關文件特寫 / 進出口場景<br>· CBD 三流動態示意圖<br><br>
+        CBD 架構動態圖依序出現：<br>「採購（Procurement）」<br>「→ 報關（Customs Clearance）」<br>「→ 交貨驗收（Delivery &amp; Acceptance）」<br><br>
+        稅務四象限圖：<br>VAT / Tariff / 匯率 / 貿易條件
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人坐姿</span>
+        <span class="chip">CBD流程動態圖</span>
+        <span class="chip">稅務四象限</span>
+        <span class="chip">B-Roll顧問場景</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        第二個答案，也是精誠最獨特的能力——<strong>CBD，Cross Border Deal，跨境商務整合</strong>。<br><br>
+        台商在海外採購 IT 設備或服務，面對的不只是技術規格的問題，而是一整套商業流程的挑戰。設備要怎麼進口？要用 CIF 還是 DDP 的貿易條件？當地要開哪種發票？VAT 稅率怎麼計算？跨境匯款有哪些限制？<br><br>
+        這些問題，如果沒有一個懂商務流程的夥伴從旁把關，隱形成本往往是帳面價格的數倍。<br><br>
+        精誠 CBD 做的事，是把台商在海外的 IT 採購，從<strong>採購、報關，到交貨驗收，做成一條龍統包</strong>。同時整合國際貿易、稅務法規、金流管理這三個維度，讓台商在越南、日本、新加坡的每一筆 IT 交易，都清晰、合規、可追蹤——就像在台灣一樣。<br><br>
+        精誠自己說：我們不是只做 IT，連「商務流」都顧到。這句話，在海外吃過虧的台商聽到，應該感受最深。
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">數據字卡 / 備註</div>
+      <div class="vflag"><span class="dot"></span>特色 B · Cross Border Deal</div>
+      <div style="margin-top:10px">
+        <ul class="pts">
+          <li><span class="arr">▸</span>CBD 三流統包動態：<strong>採購 → 報關 → 交貨驗收</strong></li>
+          <li><span class="arr">▸</span>稅務四象限字卡：<strong>VAT · Tariff · 匯率 · 貿易條件</strong></li>
+          <li><span class="arr">▸</span>涵蓋地區地圖：日本・中港・東南亞・美墨</li>
+          <li><span class="arr">▸</span>GMT時間軸：日越2024→星馬泰2025</li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>獨白版敘事重點</strong>
+        此段沒有生態長可以說「我們的服務」，改由主持人引述精誠的定位語「不只做IT，連商務流都顧到」，用第三人稱引用，比第一人稱更有公信力，更像媒體觀點。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 5 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景五 — 特色 C｜跨國專案控管，從需求到交付不斷鏈</span></div>
+
+<div class="scene t5">
+  <div class="s-head">
+    <div class="s-num"><div class="n">05</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人獨白 · 特色 C · Value C</div>
+      <div class="s-name">50+ 海外 PM 顧問 — 縮短 10%、降低 15%，數字說話</div>
+      <div class="s-sub">主持人以「成效數字」為核心，帶出精誠跨國專案管理的一條龍能力與實際成效</div>
+    </div>
+    <div class="s-time"><div class="t-r">6:00 – 7:15</div><div class="t-d">約 75 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        主持人坐姿，語氣轉「舉證」<br><br>
+        B-Roll 交叉剪輯：<br>· PM 工作場景 / 甘特圖特寫<br>· 跨時區多方視訊協作<br>· 海外機房部署、設備開箱<br>· 清關進場現場記錄<br><br>
+        專案流程動態箭頭：<br>需求規劃→採購物流<br>→清關進場→部署維運<br><br>
+        成效數字大字出現：<br>「縮短 ~10% 專案週期」<br>「降低 ~15% 隱形成本」
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人坐姿</span>
+        <span class="chip">PM場景B-Roll</span>
+        <span class="chip">流程箭頭動態圖</span>
+        <span class="chip">成效數字大字</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        第三個答案，是最讓台商有感的能力——<strong>跨國專案控管</strong>。<br><br>
+        我們剛才提到，全球大型 IT 專案有超過七成會出現延誤或超支。精誠用一支超過 <mark>50 位海外實戰 PM 顧問</mark>的團隊，系統性地解決這個問題。<br><br>
+        從<strong>需求規劃、採購物流、跨境清關，到現場部署和維運</strong>，每一個環節都有專人負責、全程追蹤。這支團隊懂的不只是技術規格，他們懂各地的物流清關規定、施工法規，以及跨時區的溝通節奏——這些都是海外 IT 專案最容易失控的地方。<br><br>
+        成效是具體的：幫客戶<mark>縮短了約 10% 的專案週期，降低了約 15% 的隱形成本</mark>。聽起來不大，但對一個幾千萬、幾億的海外建置案，這個差距，可以直接影響工廠的投產時程。<br><br>
+        這，就是精誠跨國專案控管能力的真實價值。
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">數據字卡 / 備註</div>
+      <div class="vflag"><span class="dot"></span>特色 C · Cross-border PM</div>
+      <div style="margin-top:10px">
+        <ul class="pts">
+          <li><span class="arr">▸</span>字卡①：<strong>50+</strong> 海外實戰PM顧問</li>
+          <li><span class="arr">▸</span>流程箭頭：需求規劃→採購物流→清關進場→部署維運</li>
+          <li><span class="arr">▸</span>成效大字：縮短 <strong>~10%</strong> 專案週期</li>
+          <li><span class="arr">▸</span>成效大字：降低 <strong>~15%</strong> 隱形成本</li>
+          <li><span class="arr">▸</span>「幾千萬的案子，10% 就是數百萬」可加字幕換算具體感</li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>獨白版敘事重點</strong>
+        訪談版此段由生態長說自己的成效，說服力來自「親身陳述」；獨白版改由主持人「幫觀眾換算」數字的實際意義——「幾億的案子，差 10% 就是幾千萬」，說服力來自「具體想像」。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ SCENE 6 ══════════ -->
+<div class="act-div"><span class="act-lbl">場景六 — 結尾｜主持人總結 + End Card</span></div>
+
+<div class="scene t6">
+  <div class="s-head">
+    <div class="s-num"><div class="n">06</div><div class="of">of 06</div></div>
+    <div class="s-info">
+      <div class="s-role">主持人收尾 + End Card · Closing</div>
+      <div class="s-name">IT 重新定義出海 — Global IT Ecosystem. Omni Capability.</div>
+      <div class="s-sub">呼應開場「IT 是第一道關」，三大能力字卡收尾，以品牌 tagline 和金句作結</div>
+    </div>
+    <div class="s-time"><div class="t-r">7:15 – 8:00</div><div class="t-d">約 45 秒</div></div>
+  </div>
+  <div class="s-body">
+    <div class="col">
+      <div class="col-lbl">畫面 / 鏡頭</div>
+      <div class="vbox"><div class="vtext">
+        主持人站姿，正對鏡頭<br>背景：城市空景（呼應開場）<br><br>
+        口白進行中字卡逐句出現：<br>「全球IT生態圈」<br>「CBD跨境商務整合」<br>「跨國協作專案控管」<br><br>
+        End Card：<br>大字：「Global IT Ecosystem.<br>Omni Capability.」<br>次行：「可預期・可控管・可成功」<br>SYSTEX × 天下 LOGO 並列<br>systex.com / systexasia.com<br>背景音樂漸出
+      </div></div>
+      <div class="chips">
+        <span class="chip">主持人站姿</span>
+        <span class="chip">三大能力字卡逐句</span>
+        <span class="chip">雙語End Card</span>
+        <span class="chip">音樂漸出</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">主持人口白 · Script</div>
+      <div class="script">
+        <div class="spk">主持人</div>
+        台商出海，IT 不再是最後才想到的事——它是決定能不能成功落地的第一道關。<br><br>
+        精誠集團，用三個別人很難同時具備的能力，回答了這個時代最關鍵的問題：<strong>全球 IT 生態圈</strong>，讓台商在世界任何角落都有充沛的在地服務能量；<strong>CBD 跨境商務整合</strong>，讓每一筆跨境 IT 交易清晰、合規、無隱形成本；<strong>跨國協作的專案控管力</strong>，讓每一個 IT 建置準時、可控、成功落地。<br><br>
+        這是精誠用 4 萬家台灣企業的服務底氣，和多年海外紮根的積累，才撐起來的能力。<br><br>
+        <strong>Global IT Ecosystem. Omni Capability.</strong><br>
+        讓出海這件事——<strong>可預期、可控管、可成功。</strong>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-lbl">End Card 設計 / 導演備註</div>
+      <ul class="pts">
+        <li><span class="arr">▸</span>開場：「IT 是出海成敗的第一道關」</li>
+        <li><span class="arr">▸</span>結尾：「可預期・可控管・可成功」首尾閉環</li>
+        <li><span class="arr">▸</span>三大能力字卡口白進行時逐句淡入</li>
+        <li><span class="arr">▸</span>「Global IT Ecosystem. Omni Capability.」品牌大字壓軸</li>
+        <li><span class="arr">▸</span>SYSTEX + 天下雜誌 LOGO 並列</li>
+        <li><span class="arr">▸</span>網址：systex.com / systexasia.com</li>
+        <li><span class="arr">▸</span>音樂在 tagline 後 2 秒緩緩淡出</li>
+      </ul>
+      <div class="note">
+        <strong>首尾呼應設計</strong>
+        開場宣告「IT 是第一道關」，結尾給出「Global IT Ecosystem. Omni Capability.」作為解答。全片無須受訪者，主持人既是提問者也是解答者，邏輯自洽、節奏完整。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><span class="v">6</span><div class="d">場景<br>純獨白敘事</div></div>
+  <div class="stat"><span class="v">8:00</span><div class="d">總片長</div></div>
+  <div class="stat"><span class="v">0</span><div class="d">受訪者<br>全程主持人獨白</div></div>
+  <div class="stat"><span class="v">3×90"</span><div class="d">每大能力<br>獨立90秒段落</div></div>
+  <div class="stat"><span class="v">Host Only</span><div class="d">深度報導<br>敘事風格</div></div>
+</div>
+
+
+
+</body></html>
